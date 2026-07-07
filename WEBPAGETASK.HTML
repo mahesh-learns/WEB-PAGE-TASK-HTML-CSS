@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+       }
+       #nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: linear-gradient(to right,black,white,black);
+        color: black;
+        height: 100px;
+        width: 100%;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+       }
+      #left,#right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #home-link,#about-link,#login-link,#services-link{
+        padding:0px 120px;
+    }
+    #center img{
+        width: 150px;
+        height: 90px;
+        mix-blend-mode: multiply;
+
+    }
+    #video video{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    a:hover{
+        color: white;
+        transition: 0.2s;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+    #information{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: linear-gradient(to right,black,white,black);
+        gap: 80px;
+        padding: 50px;
+        text-align: center;
+        width: 100vw;
+
+    }
+    #information img{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: 100px;
+        background: transparent;
+        mix-blend-mode: multiply;
+    }
+    p{
+        font-size: 20px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 600px;
+        font-weight: 600;
+    }
+    #information img:hover,#information p:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 100px;
+    }
+    #footer img{
+        width: 300px;
+        height: 70px;
+    }
+    #footer{
+        width: 100vw;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <div id="nav">
+        <div id = "left">
+            <div id="left">
+                <a id = "home-link" href="#video">Home</a>
+                <a id = "about-link" href="#information">About</a>
+            </div>
+        </div>
+        <div id="center"><img
+          src=https://i.pinimg.com/736x/15/93/fb/1593fb1fb259a5c5a5029f929a6d698a.jpg alt="logo"
+        /></div>
+        <div id="right">
+            <a id = "login-link" href="C:\Users\Mahesh\Desktop\WEB TECH\LOGINPAGE FOR WEBPAGE TASK.HTML" target="_blank">Login</a>
+            <a id = "services-link" href="C:\Users\Mahesh\Desktop\WEB TECH\SERVICES FOR WEBPAGETASK.HTML" target="_blank">Services</a>
+        </div>
+        </div>
+    </div>
+    <!-- video -->
+         <div id = "video">
+        <video src="../WEB TECH/vidssave.com Nokia 2720 Flip Official Ad 720P.mp4" controls autoplay muted></video>
+         </div>
+         <div id="information">
+            <img  id = "product-image" src="https://i.pinimg.com/736x/a9/da/60/a9da6022b92f1be1e3670916d72293aa.jpg" alt="">
+            <div><p>Design & DisplayPrimary Screen: 2.8-inch TFT LCD (240 x 320 pixels)Secondary Screen: 1.3-inch external TFT LCD (240 x 240 pixels)Dimensions: 104.8 x 54.5 x 18.7 mm (Closed) | 192.7 x 54.5 x 11.6 mm (Open)Weight: 118 gramsPerformance & MemoryProcessor: Qualcomm Snapdragon 205 (Dual-core, 1.1 GHz)RAM: 512 MBStorage: 4 GB (Expandable up to 32GB via dedicated microSD slot)Operating System: KaiOS (Version 2.5)BatteryCapacity: 1500 mAh (Removable)Standby Time: Up to 28 daysTalk Time: Up to 6.6 hours on 4GCamera & MultimediaRear Camera: 2 MP with LED flashFront Camera: NoneAudio: 3.5mm headphone jack, FM Radio, MP3 playerConnectivityNetwork: 4G LTE with VoLTE and VoWiFiWi-Fi: 802.11 b/g/n (Supports Wi-Fi Hotspot)Bluetooth: 4.1, A2DP, LEGPS: A-GPS, GLONASSPort: Micro-USB 2.0</p></div>
+         </div>
+         <!-- footer -->
+          <div id="footer">
+            <img src="./social_media_icons_black_colored_icon_set_set_popular_social_media.jpg" alt="icons">
+          </div>
+</body>
+</html>
